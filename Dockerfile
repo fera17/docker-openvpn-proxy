@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-EXPOSE 8080
+EXPOSE 8119
 
 RUN apk --update add privoxy openvpn runit
 
