@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:latest
 
 EXPOSE 8080
 
@@ -8,7 +8,7 @@ COPY app /app
 
 RUN find /app -name run | xargs chmod u+x
 
-ENV OPENVPN_FILENAME=uk-london-aes128.ovpn \
+ENV OPENVPN_FILENAME=client.ovpn \
     LOCAL_NETWORK=192.168.1.0/24 \
     ONLINECHECK_DELAY=900
 
